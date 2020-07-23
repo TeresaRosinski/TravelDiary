@@ -15,5 +15,14 @@ namespace TravelDiary.Tests
       Place newPlace = new Place("Test");
       Assert.AreEqual(typeof(Place), newPlace.GetType());
     }
+
+    [TestMethod]
+    public void GetCityName_ReturnsCityName_String()
+    {
+      string cityName = "Houston";
+      Place newCity = new Place (cityName);
+      string result = newCity.CityName; 
+      Assert.AreEqual(newCity, result);
+    }
   }
 }
