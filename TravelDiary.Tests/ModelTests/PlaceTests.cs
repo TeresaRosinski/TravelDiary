@@ -22,7 +22,7 @@ namespace TravelDiary.Tests
       string cityName = "Houston";
       Place newCity = new Place (cityName);
       string result = newCity.CityName; 
-      Assert.AreEqual(newCity, result);
+      Assert.AreEqual(cityName, result);
     }
   }
 }
