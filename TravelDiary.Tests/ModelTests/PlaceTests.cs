@@ -24,5 +24,13 @@ namespace TravelDiary.Tests
       string result = newCity.CityName; 
       Assert.AreEqual(cityName, result);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_PlaceList()
+    {
+      List<Place> newPlace = new List<Place> { }; 
+      List<Place> result = Place.GetAll();
+      CollectionAssert.AreEqual(newPlace, result);
+    }
   }
 }
